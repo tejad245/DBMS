@@ -4,3 +4,24 @@ This means that it orders by Country, but if some rows have the same Country, it
 Example
 SELECT * FROM Customers
 ORDER BY Country, CustomerName;
+
+
+How to Test for NULL Values?
+It is not possible to test for NULL values with comparison operators, such as =, <, or <>.
+We will have to use the IS NULL and IS NOT NULL operators instead.
+
+IS NULL Syntax
+SELECT column_names
+FROM table_name
+WHERE column_name IS NULL;
+
+
+The DELETE statement is used to delete existing records in a table.
+
+DELETE Syntax
+DELETE FROM table_name WHERE condition;
+
+The following SQL statement deletes all rows in the "Customers" table, without deleting the table:
+
+Example
+DELETE FROM Customers;
